@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Peruvian Dishes</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <h1 id="heading">Peru Bitute</h1>
+        <p id="intro">The last 10 years, Peru has been recognized as one of the world’s best culinary
+            destinations, a perfect
+            option for foodie tourism. The country’s gastronomic <strong> boom</strong> owes a great deal to its
+            biodiversity along with its multicultural heritage.</p>
+
+        <div id="rightside">
+            <label>Pick your Recipe: </label>
+            <select id="ddselect" name="pickRecipe" onchange="fn1();">
+                <option value="0"> Select </option>
+                <option value="1"> Arroz Con Pato</option>
+                <option value="2"> Aji De Gallina</option>
+                <option value="3"> Lomo Saltado</option>
+            </select>
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <div class="column-layout">
+            <section>
+                <h1 class="dishes"> Arroz Con Pato</h1>
+                <p id="arrozConPato"> It's green rice is one of the most famous dishes in Chiclayo, north of Lima. Cooks
+                    in this region use the rice
+                    harvested in local farms, fragrant cilantro leaves -never the stems-, peas, and a well fed female
+                    duck, to
+                    make this legendary entree. </p>
+                <img class="img-dishes" src="img/ArrozConPato.jpg" alt="Arroz con Pato">
+
+                 <a href="Ingredients.html">SEE THE INGREDIENTS</a>
+
+                 <div class="link">
+                    <!-- Trigger/Open The Modal -->
+                     <button id="myIng">Ingredients</button>
+                     <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p> <a href="Ingredients2.html">SEE THE INGREDIENTS</a></p>
+                            </div>                             
+                            </div>
+
+
+
+                    <button id="myBtn">Watch Video</button>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eizJ_BwY6pA"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></p>
+                        </div>
+                    </div>
+                   <!-- <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a> -->
+                </div>
+            </section>
+            <section>
+                <h1 class="dishes"> Aji de Gallina</h1>
+                <p id="ajiDeGallina">Aji de gallina is a delicious Peruvian classic—slightly spicy and bright yellow
+                    from the famous aji amarillo peppers,
+                    and rich from the unusual cream sauce made with ground walnuts. This dish is traditionally served
+                    over rice with boiled yellow potatoes
+                    and black olives.</p>
+                <img class="img-dishes" src="img/ajiDeGallina.jpg" alt="Aji De Gallina">
+                <div class="link">
+                    <a href="Ingredients2.html">SEE THE INGREDIENTS</a>
+                    <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a>
+                </div>
+            </section>
+            <section>
+                <h1 class="dishes"> Lomo Saltado</h1>
+                <p id="lomoSaltado">Lomo saltado is a popular, traditional Peruvian dish, a stir fry that typically
+                    combines marinated strips of sirloin
+                    with onions, tomatoes, french fries, and other ingredients; and is typically served with rice.</p>
+                <img class="img-dishes" src="img/lomoSaltado.jpg" alt="Lomo Saltado">
+                <div class="link">
+                    <a href="Ingredients3.html">SEE THE INGREDIENTS</a>
+                    <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <hr>
+    <footer id="main-footer">
+        <div id="chefpic">
+            <img src="img/chef.png" alt="chef">
+        </div>
+        <div id="media">
+            <img src="img/facebook.png" alt="facebook"></li>
+            <img src="img/instagram.jpg" alt="instagram">
+            <img src="img/twitt.png" alt="twitte"></li>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
