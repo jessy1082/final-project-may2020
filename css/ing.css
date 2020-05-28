@@ -31,13 +31,13 @@ header{
 } */
 
 #middle{
-    background-color: rgb(139, 191, 125);
+/*     background-color: rgb(139, 191, 125); */
     list-style: none;
     margin-top: 100px;
     margin-left: 500px;
     margin-right: 500px;
     padding: 10px;
-    border: 5px double black;
+/*     border: 5px double black; */
 }
 
 #middle ul li{
