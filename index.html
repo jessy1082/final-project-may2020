@@ -15,7 +15,6 @@
             destinations, a perfect
             option for foodie tourism. The country’s gastronomic <strong> boom</strong> owes a great deal to its
             biodiversity along with its multicultural heritage.</p>
-
         <div id="rightside">
             <label>Pick your Recipe: </label>
             <select id="ddselect" name="pickRecipe" onchange="fn1();">
@@ -27,7 +26,6 @@
         </div>
     </header>
     <hr>
-
     <main>
         <div class="column-layout">
             <section>
@@ -38,35 +36,19 @@
                     duck, to
                     make this legendary entree. </p>
                 <img class="img-dishes" src="img/ArrozConPato.jpg" alt="Arroz con Pato">
-
-                 <a href="Ingredients.html">SEE THE INGREDIENTS</a>
-
-                 <div class="link">
-                    <!-- Trigger/Open The Modal -->
-                     <button id="myIng">Ingredients</button>
-                     <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p> <a href="Ingredients2.html">SEE THE INGREDIENTS</a></p>
-                            </div>                             
-                            </div>
-
-
-
-                    <button id="myBtn">Watch Video</button>
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eizJ_BwY6pA"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe></p>
-                        </div>
+                <div class="btns">
+                    <button id="myBtnIng" value="0">Ingredients</button>
+                    <button id="myBtnVideo">Watch Video</button>
+                </div>
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p><iframe width="700" height="700" src="https://www.youtube.com/embed/eizJ_BwY6pA"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></p>
                     </div>
-                   <!-- <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a> -->
                 </div>
             </section>
             <section>
@@ -77,9 +59,19 @@
                     over rice with boiled yellow potatoes
                     and black olives.</p>
                 <img class="img-dishes" src="img/ajiDeGallina.jpg" alt="Aji De Gallina">
-                <div class="link">
-                    <a href="Ingredients2.html">SEE THE INGREDIENTS</a>
-                    <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a>
+                <div class="btns">
+                    <button id="myBtnIng2">Ingredients</button>
+                    <button id="myBtnVideo2">Watch Video</button>
+                </div>
+                <div id="myModal2" class="modal2">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close2">&times;</span>
+                        <p><iframe width="700" height="700" src="https://www.youtube.com/embed/-7K1cQZc-ko"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></p>
+                    </div>
                 </div>
             </section>
             <section>
@@ -88,27 +80,60 @@
                     combines marinated strips of sirloin
                     with onions, tomatoes, french fries, and other ingredients; and is typically served with rice.</p>
                 <img class="img-dishes" src="img/lomoSaltado.jpg" alt="Lomo Saltado">
-                <div class="link">
-                    <a href="Ingredients3.html">SEE THE INGREDIENTS</a>
-                    <a class="link1" href="https://youtu.be/eizJ_BwY6pA">DO IT YOURSELF</a>
+                <div class="btns">
+                    <button id="myBtnIng3">Ingredients</button>
+                    <button id="myBtnVideo3">Watch Video</button>
+                </div>
+                <div id="myModal3" class="modal3">
+                    <div class="modal-content">
+                        <span class="close3">&times;</span>
+                        <p><iframe width="700" height="700" src="https://www.youtube.com/embed/WuF8vLUudZo"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></p>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
     <hr>
+    <p id="pform"> Please add any Request or Comments:</p>
+    <div id="bottom">
+        <div id="chef">
+            <img src="img/chef2.jpg" alt="pic">
+        </div>
+        <div id="form">
+            <form>
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" placeholder="Enter First Name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name </label>
+                <input type="text" name="lastName" placeholder="Enter Last Name">
+            </div>
+            <br>
+            <div id="email" >
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter Email">
+            </div>
+            <br>
+            <div>
+                <label>Comments </label>
+                <textarea rows="10" cols="30" name="message" placeholder="Enter Message"></textarea>
+            </div>
+            </form>
+            <br>
+            <button click="Some Function"> Submit</button>
+        </div>
+    </div>
     <footer id="main-footer">
-        <div id="chefpic">
-            <img src="img/chef.png" alt="chef">
-        </div>
-        <div id="media">
-            <img src="img/facebook.png" alt="facebook"></li>
-            <img src="img/instagram.jpg" alt="instagram">
-            <img src="img/twitt.png" alt="twitte"></li>
-        </div>
+        <img src="img/facebook.png" alt="facebook">
+        <img src="img/instagram.jpg" alt="instagram">
+        <img src="img/twitt.png" alt="twitter">
     </footer>
-
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
